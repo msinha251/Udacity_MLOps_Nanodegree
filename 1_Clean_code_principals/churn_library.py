@@ -196,7 +196,8 @@ def classification_report_image(y_train,
     '''
 
     #Random Forest results
-    plt.rc('figure', figsize=(5, 5))
+    plt.figure(figsize=(8, 8))
+    # plt.rc('figure', figsize=(15, 10))
     plt.text(0.01, 1.25, str('Random Forest Train'), {
              'fontsize': 10}, fontproperties='monospace')
     plt.text(0.01, 0.05, str(classification_report(y_test, y_test_preds_rf)), {
@@ -210,7 +211,8 @@ def classification_report_image(y_train,
     plt.close()
     
     #Logistic Regression results
-    plt.rc('figure', figsize=(5, 5))
+    plt.figure(figsize=(8, 8))
+    # plt.rc('figure', figsize=(15, 10))
     plt.text(0.01, 1.25, str('Logistic Regression Train'),
              {'fontsize': 10}, fontproperties='monospace')
     plt.text(0.01, 0.05, str(classification_report(y_train, y_train_preds_lr)), {
@@ -259,6 +261,7 @@ def feature_importance_plot(model, x_data, output_pth):
 
     # save feature importance plot:
     plt.savefig(f'{output_pth}/feature_importances.png')
+    plt.close()
 
 
 def train_models(x_train, x_test, y_train, y_test):
