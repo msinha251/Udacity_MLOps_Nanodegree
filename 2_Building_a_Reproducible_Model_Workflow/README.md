@@ -212,3 +212,11 @@ In this lesson we learned how to:
 
 ------------
 
+## Recap Lesson 4: Training, Validation and Experiment Tracking:
+
+**Inference pipeline**: An inference pipeline is an ML pipeline that contains everything that needs to run in production at inference time: that could be a pre-processing step that transform the input data to the expected data by the model.
+
+**Inference Artifact**: An inference artifact is a serialiyed (i.e. saved to disk) version of the inference pipeline containing the pre-processing code as well as the trained model.  
+
+Mostly all the libraries allows to save components together like preprocessing and model.
+![example_inference_artifacts](images/example_inference_artifacts.png) 
