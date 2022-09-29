@@ -220,3 +220,32 @@ In this lesson we learned how to:
 
 Mostly all the libraries allows to save components together like preprocessing and model.
 ![example_inference_artifacts](images/example_inference_artifacts.png) 
+
+Run mlflow job with hydra sweep with cpu parallelism enabled:
+`mlflow run . -P hydra_options="-m random_forest_pipeline.random_forest.max_depth=range(10,50,3) random_forest_pipeline.tfidf.max_features=range(50,200,50) hydra/launcher=joblib"`
+
+In this lesson we learned:
+**Experiment Tracking**: The process of recording all the necessary pieces of information needed to inspect and reproduce a run. We need to track the code and its version, the dependencies and their versions, all the metrics of interests, all the produced artifacts (images, model exports, etc.), as well as the environment where the experiment runs.
+
+**Hyperparameter Optimization**: The process of varying one or more hyperparameter of a run in order to optimize a metric of interest (for example, Accuracy or Mean Absolute Error).
+
+**Inference Artifact**: An instance of the Inference Pipeline containing a trained model.
+
+**Inference Pipeline**: A pipeline constituted of two steps: the pre-processing step and the model. The pre-processing step can be a pipeline on its own, and it manipulates the data and prepares them for the model. The inference pipeline should contain all the pre-processing that needs to happen during model development as well as during production. When the inference pipeline is trained (i.e., it contains a trained model) it can be exported to disk. The export product is called an Inference Artifact.
+
+------------
+
+## Recap Lesson 5: Final Pipeline, Release and Deploy:
+
+![semantic_versioning.png](./images/semantic_versioning.png)
+
+Get model from wandb: `wandb artifact get genre_classification_prod/model_export:prod --root model`
+
+**Release**: A static copy of the code that reflects the state at a particular point in time. It has a version attached to it, and a tag. The tag can be used to restore the repository (or a local copy of the code in the repository) to the state it was when the release was cut. <br>
+
+**Semantic Versioning**: A common schema for versioning releases. A release version is made of 3 numbers, like 1.3.8, called respectively major, minor, and patch. The major number should be incremented for large, backward-incompatible changes. The minor number should be incremented when new features are added in a backward-compatible way. The patch number should be incremented for bug fixes and other small backward-compatible changes. <br>
+
+**Deployment**: The operation of taking an inference artifact and putting it into production, so it can serve results to stakeholders and customers. <br>
+
+
+
