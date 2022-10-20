@@ -13,3 +13,8 @@ Consider you are working for a property management company renting rooms and pro
 In this project you will build such a pipeline, similar to below.
 
 ![ml-pipeline.png](./2_Building_a_Reproducible_Model_Workflow/images/ml-pipeline.png)
+
+
+[Project 3: Deploying a Machine Learning Model on Heroku with FastAPI](https://github.com/msinha251/Udacity_MLDevops_C3_Project)
+In this project,  we applied the skills that we have acquired in this course to develop a classification model on publicly available Census Bureau data. We created unit tests to monitor the model performance on various slices of the data. Then, we deployed our model using the FastAPI package and create API tests. Both the slice-validation and the API tests will be incorporated into a CI/CD framework using GitHub Actions as well as used DVC for our data / model versioning.
+

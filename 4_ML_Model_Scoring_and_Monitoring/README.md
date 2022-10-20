@@ -123,7 +123,7 @@ model_drift = new_f1_score < np.quantile(previous_scores_list, 0.25) - (1.5 * iq
 <br>
 
 
-Hypothesis Testing: This is a methods for comparing two different models. In hypothesis testing:
+**Hypothesis Testing**: This is a methods for comparing two different models. In hypothesis testing:
 * load previous scores for both models
 * Use a t-test to compare the two sets of scores.
 * Check weather p < 0.05
@@ -140,11 +140,26 @@ Model drift: how to perform several different tests to check for model drift
 Hypothesis testing: how to use statistical tests to compare two different models
 These skills are very important for all ML projects. By scoring models, you can ensure that they're up-to-date, and as accurate as possible.
 
-![lesson_3_recap](lesson_3_recap.png)
+![lesson_3_recap](./images/lesson_3_recap.png)
 
 ----
 
 ## Recap Lesson 4: Diagnosing and Fixing Operational Problems
+
+**Data Integrity**: When data is missing or invalid, we say this **data integrity** issue. We can check the data integrity issue by counting the NaN values.<br>
+**Data Stability**: When data contains values that are different from what we expect, we say there's a **data stability** issue. We can check for data stability issue by calculating and compare the mean and median of previous versions of the data. <br>
+
+![data_integrity_stability](./images/data_integrity_stability.png)
+
+
+**Summary**
+
+This lesson was about diagnosing and resolving operational issues. In this lesson, you learned how to:
+
+* Time ML processes, and determine whether there are speed or latency issues
+* Check for integrity and stability issues in data
+* Check for dependencies, and resolve dependency issues
+* Perform data imputation: a method for resolving data integrity problems
 
 
 

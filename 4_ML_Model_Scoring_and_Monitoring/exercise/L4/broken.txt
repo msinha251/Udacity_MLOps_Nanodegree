@@ -1,0 +1,1 @@
+wandb 0.13.1 has requirement protobuf<4.0dev,>=3.12.0, but you have protobuf 4.21.7.
