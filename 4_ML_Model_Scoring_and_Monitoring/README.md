@@ -162,4 +162,13 @@ This lesson was about diagnosing and resolving operational issues. In this lesso
 * Perform data imputation: a method for resolving data integrity problems
 
 
+## Recap Lesson 5: Model Reporting and Monitoring with API's
 
+In this lesson, we learned how to perform model reporting and monitoring with API's. We covered the following topics:
+
+* API configuration: how to configure simple API's.
+* Endpoint scripting: creating multiple, complex endpoints for API's
+* Calling API's: how to call API's in several ways
+* Different API Methods: different ways that API's can be called to provide or receive information or files
+
+![lesson_5_recap](./images/lesson_5_recap.png)

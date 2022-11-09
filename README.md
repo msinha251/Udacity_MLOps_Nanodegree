@@ -18,3 +18,6 @@ In this project you will build such a pipeline, similar to below.
 [Project 3: Deploying a Machine Learning Model on Heroku with FastAPI](https://github.com/msinha251/Udacity_MLDevops_C3_Project)
 In this project,  we applied the skills that we have acquired in this course to develop a classification model on publicly available Census Bureau data. We created unit tests to monitor the model performance on various slices of the data. Then, we deployed our model using the FastAPI package and create API tests. Both the slice-validation and the API tests will be incorporated into a CI/CD framework using GitHub Actions as well as used DVC for our data / model versioning.
 
+[Project 4: A Dynamic Risk Assessment System](https://github.com/msinha251/Udacity_MLDevops_C4_Project)
+In this project we will create, deploy, and monitor a risk assessment ML model that will estimate the attrition risk of each of the company's 10,000 clients. If the model we create and deploy is accurate, it will enable the client managers to contact the clients with the highest risk and avoid losing clients and revenue.
+Also check for model drift and retrain the model if necessary.
